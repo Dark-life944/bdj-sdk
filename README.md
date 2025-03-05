@@ -1,4 +1,4 @@
-# BD-J Linux SDK
+# BD-J Linux SDK 
 This is a set of tools to simplify building BD-J ISO images on GNU/Linux systems.
 It is an adaptation of the Win32 [minimal BD-J toolkit for the PS3][ps3],
 with an updated authoring tool from [the HD Cookbook][hdc]. For creating ISO
