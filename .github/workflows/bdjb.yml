@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         submodules: recursive
 
@@ -42,7 +42,7 @@ jobs:
         make -C samples/ps5-payload-loader/payloads/jar
 
     - name: Upload ps5-payload-loader artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ps5-payload-loader
         path: |
@@ -52,7 +52,7 @@ jobs:
           samples/ps5-payload-loader/payloads/lua/*.lua
 
     - name: Upload ps5-elf-loader artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ps5-elf-loader
         path: |
@@ -60,43 +60,43 @@ jobs:
           samples/ps5-elf-loader/payloads/*.elf
 
     - name: Upload ps5-jar-loader artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/ps5-jar-loader/*.iso
         name: ps5-jar-loader
 
     - name: Upload ps5-kernel-data-dump artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/ps5-kernel-data-dump/*.iso
         name: ps5-kernel-data-dump
 
     - name: Upload ps5-lua-server artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/ps5-lua-server/*.iso
         name: ps5-lua-server
 
     - name: Upload ps5-invoke-native artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/ps5-invoke-native/*.iso
         name: ps5-invoke-native
 
     - name: Upload ps5-sandbox-filedump artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/ps5-sandbox-filedump/*.iso
         name: ps5-sandbox-filedump
 
     - name: Upload ps5-app0-filedump
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/ps5-app0-filedump/*.iso
         name: ps5-app0-filedump
 
     - name: Upload helloworld
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: samples/helloworld/*.iso
         name: helloworld
